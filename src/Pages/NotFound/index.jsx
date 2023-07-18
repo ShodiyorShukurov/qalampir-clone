@@ -2,10 +2,12 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import notFound from "../../Assets/Images/404.jpg";
 import "./notfound.scss";
 import { Link } from "react-router-dom";
+import Header from "../../Components/Header";
 
 const NotFound = () => {
   return (
     <>
+    <Header />
       <div className="not-found">
         <div className="container">
           <div className="not-found__wrapper">
@@ -16,7 +18,7 @@ const NotFound = () => {
             <p className="not-found__text">
               Bizni his qilishingiz uchun o'rnimizda bo'lishingiz kerak
             </p>
-            <Link className="not-found__btn" to='/home'>
+            <Link className="not-found__btn" to='/home/uz'>
               <IoIosArrowRoundBack />
               Bosh sahifaga qaytish
             </Link>
